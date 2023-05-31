@@ -18,7 +18,10 @@ flutter:
 
 dependencies:
   camera_platform_interface:
-    path: ../camera_platform_interface
+    git:
+      url: https://github.com/pgahq/flutter_packages_pga_fork.git
+      path: packages/camera/camera_platform_interface
+      ref: override_camera_dependencies
   flutter:
     sdk: flutter
   flutter_web_plugins:
