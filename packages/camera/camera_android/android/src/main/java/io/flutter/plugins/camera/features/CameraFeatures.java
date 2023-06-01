@@ -307,7 +307,7 @@ public class CameraFeatures {
    *
    * @param fps the {@link IntFeature} instance to set.
    */
-  public void setFps(IntFeature fps) {
+  public void setFps(@NonNull IntFeature fps) {
     this.featureMap.put(FPS, fps);
   }
 
@@ -316,7 +316,7 @@ public class CameraFeatures {
    *
    * @return the fps feature.
    */
-  public IntFeature getFps() {
+  public @NonNull IntFeature getFps() {
     return (IntFeature) featureMap.get(FPS);
   }
 
@@ -325,7 +325,7 @@ public class CameraFeatures {
    *
    * @param videoBitrate the {@link IntFeature} instance to set.
    */
-  public void setVideoBitrate(IntFeature videoBitrate) {
+  public void setVideoBitrate(@NonNull IntFeature videoBitrate) {
     this.featureMap.put(VIDEO_BITRATE, videoBitrate);
   }
 
@@ -334,7 +334,7 @@ public class CameraFeatures {
    *
    * @return the videoBitrate feature.
    */
-  public IntFeature getVideoBitrate() {
+  public @NonNull IntFeature getVideoBitrate() {
     return (IntFeature) featureMap.get(VIDEO_BITRATE);
   }
 
@@ -343,7 +343,7 @@ public class CameraFeatures {
    *
    * @param getAudioBitrate the {@link IntFeature} instance to set.
    */
-  public void setAudioBitrate(IntFeature audioBitrate) {
+  public void setAudioBitrate(@NonNull IntFeature audioBitrate) {
     this.featureMap.put(AUDIO_BITRATE, audioBitrate);
   }
 
@@ -352,7 +352,7 @@ public class CameraFeatures {
    *
    * @return the getAudioBitrate feature.
    */
-  public IntFeature getAudioBitrate() {
+  public @NonNull IntFeature getAudioBitrate() {
     return (IntFeature) featureMap.get(AUDIO_BITRATE);
   }
 }

@@ -33,9 +33,9 @@ public class MediaRecorderBuilder {
   public MediaRecorderBuilder(
       @NonNull CamcorderProfile camcorderProfile,
       @NonNull String outputFilePath,
-      Integer fps,
-      Integer videoBitrate,
-      Integer audioBitrate) {
+      @Nullable Integer fps,
+      @Nullable Integer videoBitrate,
+      @Nullable Integer audioBitrate) {
     this(
         camcorderProfile,
         outputFilePath,
@@ -48,9 +48,9 @@ public class MediaRecorderBuilder {
   public MediaRecorderBuilder(
       @NonNull EncoderProfiles encoderProfiles,
       @NonNull String outputFilePath,
-      Integer fps,
-      Integer videoBitrate,
-      Integer audioBitrate) {
+      @Nullable Integer fps,
+      @Nullable Integer videoBitrate,
+      @Nullable Integer audioBitrate) {
     this(
         encoderProfiles,
         outputFilePath,

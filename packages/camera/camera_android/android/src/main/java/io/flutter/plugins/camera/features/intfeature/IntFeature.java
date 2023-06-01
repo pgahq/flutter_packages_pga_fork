@@ -13,23 +13,23 @@ public class IntFeature extends CameraFeature<Integer> {
 
   private Integer currentValue;
 
-  public IntFeature(CameraProperties cameraProperties, Integer value) {
+  public IntFeature(@NonNull CameraProperties cameraProperties, @NonNull Integer value) {
     super(cameraProperties);
     currentValue = value;
   }
 
   @Override
-  public String getDebugName() {
+  public @NonNull String getDebugName() {
     return "IntFeature";
   }
 
   @Override
-  public Integer getValue() {
+  public @NonNull Integer getValue() {
     return currentValue;
   }
 
   @Override
-  public void setValue(Integer value) {
+  public void setValue(@NonNull Integer value) {
     currentValue = value;
   }
 
@@ -39,5 +39,5 @@ public class IntFeature extends CameraFeature<Integer> {
   }
 
   @Override
-  public void updateBuilder(CaptureRequest.Builder requestBuilder) {}
+  public void updateBuilder(@NonNull CaptureRequest.Builder requestBuilder) {}
 }

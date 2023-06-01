@@ -33,7 +33,7 @@ public abstract class CameraFeature<T> {
    *
    * @return <T> Current value of this feature's setting.
    */
-  public abstract T getValue();
+  public abstract Integer getValue();
 
   /**
    * Sets a new value for this feature's setting.
